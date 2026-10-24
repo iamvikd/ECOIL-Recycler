@@ -1,0 +1,19 @@
+{
+  "name": "ecoil-recycler-desk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Post segregated waste lots, find the nearest verified recyclers in North India, compare ex-yard rates and log quotes.",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "check": "node scripts/check.js",
+    "seed": "node --env-file=.env.local scripts/seed.js",
+    "reseed": "node --env-file=.env.local scripts/seed.js --replace"
+  },
+  "dependencies": {
+    "@upstash/redis": "1.38.4"
+  }
+}

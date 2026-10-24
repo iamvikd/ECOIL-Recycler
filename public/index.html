@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ECOIL Recycler Desk</title>
+<meta name="description" content="Post segregated waste lots, find the nearest verified recyclers in North India, compare ex-yard rates and log quotes.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>ECOIL Recycler Desk</h1>
+      <p class="sub">Post a segregated lot from any storage point, see the nearest recyclers for that stream with their published contacts, an indicative ex-yard rate, and log firm quotes as they come in.</p>
+    </div>
+    <div class="stack" style="gap:8px;align-items:flex-end">
+      <div class="status"><span class="dot" id="dbDot"></span><span id="dbText">Connecting to database…</span></div>
+      <form class="row" id="keyBox" hidden autocomplete="off">
+        <label for="keyInput" class="label">Access key</label>
+        <input id="keyInput" type="password" style="width:180px" required>
+        <button class="btn small" type="submit">Unlock</button>
+      </form>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-tab="find" aria-selected="true">Find &amp; post lot</button>
+    <button role="tab" data-tab="lots" aria-selected="false">Lots &amp; quotes<span class="count" id="lotCount">0</span></button>
+    <button role="tab" data-tab="ewaste" aria-selected="false">E-Waste<span class="count" id="ewCount">0</span></button>
+    <button role="tab" data-tab="dir" aria-selected="false">Recycler directory<span class="count" id="dirCount">0</span></button>
+    <button role="tab" data-tab="rates" aria-selected="false">Rates &amp; sources</button>
+  </nav>
+
+  <!-- FIND -->
+  <section id="tab-find">
+    <div class="grid2">
+      <form class="panel stack" id="lotForm" autocomplete="off">
+        <h2>Lot details</h2>
+        <div class="field">
+          <label for="loc">Storage location</label>
+          <select id="loc"></select>
+        </div>
+        <div class="two" id="customBox" hidden>
+          <div class="field"><label for="lat">Latitude</label><input id="lat" type="number" step="0.0001" placeholder="30.9010"></div>
+          <div class="field"><label for="lng">Longitude</label><input id="lng" type="number" step="0.0001" placeholder="75.8573"></div>
+          <div class="field" style="grid-column:1/-1"><label for="locName">Storage point name</label><input id="locName" placeholder="e.g. Dhandari Kalan yard"></div>
+        </div>
+        <div class="field">
+          <span class="label" style="margin-bottom:2px">Waste stream</span>
+          <div class="seg" id="catSeg">
+            <label><input type="radio" name="cat" value="cardboard" id="cat-cardboard" checked> Cardboard (OCC)</label>
+            <label><input type="radio" name="cat" value="rigid" id="cat-rigid"> Hard plastic bottles &amp; containers</label>
+            <label><input type="radio" name="cat" value="qsr" id="cat-qsr"> QSR mixed waste</label>
+            <label><input type="radio" name="cat" value="ewaste" id="cat-ewaste"> E-waste</label>
+          </div>
+        </div>
+        <div class="field" id="gradeBox" hidden>
+          <label for="grade">Rigid plastic grade</label>
+          <select id="grade">
+            <option value="pet">PET bottles (baled)</option>
+            <option value="hdpe">HDPE / PP containers</option>
+            <option value="mixed">Mixed rigid, unsorted</option>
+          </select>
+        </div>
+        <div class="field" id="ewGradeBox" hidden>
+          <label for="ewGrade">E-waste grade</label>
+          <select id="ewGrade">
+            <option value="ew_mixed">Mixed e-waste (whole units)</option>
+            <option value="ew_pcb">Circuit boards / PCBs</option>
+            <option value="ew_cable">Cables &amp; wiring</option>
+            <option value="ew_casing">Plastic casings</option>
+          </select>
+        </div>
+        <div class="two">
+          <div class="field"><label for="tonnes">Quantity (t)</label><input id="tonnes" type="number" min="0.1" step="0.1" value="8"></div>
+          <div class="field"><label for="radius">Search radius (road km)</label>
+            <select id="radius"><option value="150">150</option><option value="300" selected>300</option><option value="500">500</option><option value="900">900</option></select>
+          </div>
+        </div>
+        <div class="field"><label for="notes">Condition notes</label><textarea id="notes" placeholder="Baled / loose, moisture, contamination, ready date">Baled, dry, stored under cover. Ready for pickup this week.</textarea></div>
+        <div class="row">
+          <button class="btn" type="submit">Find recyclers</button>
+          <button class="btn ghost" type="button" id="saveLot" disabled>Save lot to shared log</button>
+        </div>
+        <p class="note" id="saveHint">Example lot shown. Change the details and run the search, then save it so the team can log quotes against it.</p>
+      </form>
+
+      <div class="stack" style="min-width:0">
+        <div class="summary" id="sum"></div>
+        <div class="panel" style="min-width:0">
+          <div class="row" style="justify-content:space-between"><h2>Nearest recyclers</h2><span class="muted" id="matchMeta"></span></div>
+          <div id="matches" style="margin-top:6px"></div>
+          <div id="networks"></div>
+        </div>
+        <div class="panel stack" style="min-width:0">
+          <div class="row" style="justify-content:space-between"><h2>RFQ email draft</h2><button class="btn small ghost" type="button" id="copyRfq">Copy draft</button></div>
+          <p class="note">Send it from your own mailbox to the addresses above (Bcc). Ask for an ex-yard rate so the figures compare without freight.</p>
+          <pre class="rfq" id="rfq"></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOTS -->
+  <section id="tab-lots" hidden>
+    <figure class="flow">
+      <div class="row" style="justify-content:space-between;margin-bottom:10px"><h2>How a lot moves from yard to sale</h2><span class="muted" style="font-size:.85rem">Live counts from the lot log</span></div>
+      <div class="stagebar">
+        <div><span class="label">Open</span><b id="stOpen">0</b><span class="muted" style="font-size:.82rem">posted, RFQ out</span></div>
+        <div><span class="label">Quoted</span><b id="stQuoted">0</b><span class="muted" style="font-size:.82rem">rates in hand</span></div>
+        <div><span class="label">Sold</span><b id="stSold">0</b><span class="muted" style="font-size:.82rem" id="stSoldT">0 t moved</span></div>
+        <div><span class="label">Cancelled</span><b id="stCan">0</b><span class="muted" style="font-size:.82rem">withdrawn</span></div>
+      </div>
+      <div class="flowscroll">
+      <svg viewBox="0 0 960 300" role="img" aria-label="Process flow: a segregated lot at the storage point is posted on the desk, an RFQ goes to the nearest recyclers, quotes are logged, the best ex-yard rate is accepted, the buyer picks up, the load is weighed and paid, and the lot is closed as Sold.">
+        <defs>
+          <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+        </defs>
+        <!-- stage bands -->
+        <g font-family="JetBrains Mono, monospace" font-size="11" fill="currentColor" opacity=".6">
+          <text x="270" y="22">OPEN</text>
+          <text x="770" y="22">QUOTED</text>
+          <text x="20" y="290">SOLD</text>
+        </g>
+        <line x1="270" y1="28" x2="690" y2="28" stroke="var(--warn)" stroke-width="3"/>
+        <line x1="770" y1="28" x2="940" y2="28" stroke="var(--pet)" stroke-width="3"/>
+        <line x1="770" y1="268" x2="940" y2="268" stroke="var(--pet)" stroke-width="3"/>
+        <line x1="20" y1="268" x2="690" y2="268" stroke="var(--good)" stroke-width="3"/>
+
+        <!-- row 1 boxes -->
+        <g font-family="Source Sans 3, Segoe UI, sans-serif" text-anchor="middle">
+          <rect x="20" y="44" width="170" height="64" rx="6" fill="var(--sunken)" stroke="var(--line)"/>
+          <text x="105" y="72" font-size="15" font-weight="700" fill="currentColor">Storage point</text>
+          <text x="105" y="92" font-size="12" fill="var(--muted)">segregated, baled</text>
+
+          <rect x="270" y="44" width="170" height="64" rx="6" fill="var(--surface)" stroke="currentColor"/>
+          <text x="355" y="72" font-size="15" font-weight="700" fill="currentColor">Post lot</text>
+          <text x="355" y="92" font-size="12" fill="var(--muted)">Find &amp; post tab</text>
+
+          <rect x="520" y="44" width="170" height="64" rx="6" fill="var(--surface)" stroke="currentColor"/>
+          <text x="605" y="72" font-size="15" font-weight="700" fill="currentColor">RFQ to recyclers</text>
+          <text x="605" y="92" font-size="12" fill="var(--muted)">nearest first, Bcc</text>
+
+          <rect x="770" y="44" width="170" height="64" rx="6" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/>
+          <text x="855" y="72" font-size="15" font-weight="700" fill="var(--accent)">Log quotes</text>
+          <text x="855" y="92" font-size="12" fill="var(--accent)">₹/t ex-yard, terms</text>
+
+          <!-- row 2 boxes, right to left -->
+          <rect x="770" y="188" width="170" height="64" rx="6" fill="var(--surface)" stroke="currentColor"/>
+          <text x="855" y="216" font-size="15" font-weight="700" fill="currentColor">Accept best rate</text>
+          <text x="855" y="236" font-size="12" fill="var(--muted)">checked vs benchmark</text>
+
+          <rect x="520" y="188" width="170" height="64" rx="6" fill="var(--surface)" stroke="currentColor"/>
+          <text x="605" y="216" font-size="15" font-weight="700" fill="currentColor">Buyer pickup</text>
+          <text x="605" y="236" font-size="12" fill="var(--muted)">buyer's own vehicle</text>
+
+          <rect x="270" y="188" width="170" height="64" rx="6" fill="var(--surface)" stroke="currentColor"/>
+          <text x="355" y="216" font-size="15" font-weight="700" fill="currentColor">Weigh &amp; pay</text>
+          <text x="355" y="236" font-size="12" fill="var(--muted)">weighbridge slip</text>
+
+          <rect x="20" y="188" width="170" height="64" rx="6" fill="var(--sunken)" stroke="var(--line)"/>
+          <text x="105" y="216" font-size="15" font-weight="700" fill="currentColor">Close lot</text>
+          <text x="105" y="236" font-size="12" fill="var(--muted)">status set to Sold</text>
+        </g>
+
+        <!-- arrows with labels -->
+        <g stroke="currentColor" stroke-width="1.6" fill="none">
+          <line x1="192" y1="76" x2="266" y2="76" marker-end="url(#ah)"/>
+          <line x1="442" y1="76" x2="516" y2="76" marker-end="url(#ah)"/>
+          <line x1="692" y1="76" x2="766" y2="76" marker-end="url(#ah)"/>
+          <line x1="855" y1="110" x2="855" y2="184" marker-end="url(#ah)"/>
+          <line x1="768" y1="220" x2="694" y2="220" marker-end="url(#ah)"/>
+          <line x1="518" y1="220" x2="444" y2="220" marker-end="url(#ah)"/>
+          <line x1="268" y1="220" x2="194" y2="220" marker-end="url(#ah)"/>
+        </g>
+        <g font-family="Source Sans 3, Segoe UI, sans-serif" font-size="11.5" fill="var(--muted)" text-anchor="middle">
+          <text x="229" y="68">tonnes, grade</text>
+          <text x="479" y="68">copy draft</text>
+          <text x="729" y="68">replies</text>
+          <text x="866" y="152" text-anchor="start">highest</text>
+          <text x="866" y="166" text-anchor="start">₹/t wins</text>
+          <text x="731" y="212">confirm date</text>
+          <text x="481" y="212">net weight</text>
+          <text x="231" y="212">invoice, docs</text>
+        </g>
+      </svg>
+      </div>
+      <figcaption>The four status values on each lot map to these stages: Open while the RFQ is out, Quoted once a rate is logged, Sold after weighing and payment. Freight sits with the buyer, which is why every rate is compared ex-yard.</figcaption>
+    </figure>
+
+    <div class="row" style="justify-content:space-between;margin-bottom:14px">
+      <h2>Posted lots</h2>
+      <select id="lotFilter" style="width:auto"><option value="all">All statuses</option><option>Open</option><option>Quoted</option><option>Sold</option><option>Cancelled</option></select>
+    </div>
+    <div id="lotList"></div>
+  </section>
+
+  <!-- E-WASTE -->
+  <section id="tab-ewaste" hidden>
+    <div class="row" style="justify-content:space-between;margin-bottom:6px">
+      <h2>E-Waste: authorised agencies and rates</h2>
+      <button class="btn small" type="button" id="ewPost">Post an e-waste lot</button>
+    </div>
+    <p class="note" style="max-width:85ch;margin-bottom:16px">Under the E-Waste (Management) Rules, 2022, a bulk consumer may hand e-waste only to a producer, refurbisher or recycler registered on the CPCB EPR portal. Sell e-waste only to agencies on a state pollution control board list, and keep the invoice and handover record for your annual return.</p>
+
+    <h3 style="margin-bottom:8px">Indicative rates, ex-yard</h3>
+    <div class="scroll" style="margin-bottom:12px"><table>
+      <thead><tr><th>Grade</th><th class="num">Low ₹/kg</th><th class="num">High ₹/kg</th><th>Basis</th><th>As of</th></tr></thead>
+      <tbody id="ewRateBody"></tbody>
+    </table></div>
+    <div class="callout" style="margin-bottom:20px">
+      <b>What moves the price</b>
+      <ul>
+        <li>Mixed e-waste in Ludhiana was listed at ₹42.26/kg on 24 Oct 2026; pickup quotes usually run ₹5 to 7/kg below that baseline.</li>
+        <li>Recyclers also earn EPR certificates on what they process. The 2024 amendment ties the certificate price to a band of 30 to 100% of CPCB's environmental compensation, and ₹22/kg is the widely reported floor. Producers are contesting the band in the Delhi High Court, so certificate value, and therefore recycler bids, can shift.</li>
+        <li>Sorted boards, cables and casings fetch more than mixed whole units. Lead-acid and lithium batteries fall under the Battery Waste Management Rules, so quote them separately.</li>
+      </ul>
+    </div>
+
+    <div class="row" style="justify-content:space-between;margin-bottom:8px">
+      <h3>Authorised e-waste recyclers and dismantlers</h3>
+      <select id="ewState" style="width:auto"><option value="all">All states</option><option>Punjab</option><option>Haryana</option><option>Delhi</option><option>Uttar Pradesh</option></select>
+    </div>
+    <p class="note" style="max-width:85ch;margin-bottom:10px">Punjab entries come from the PPCB list of e-waste recyclers and refurbishers. Haryana, Delhi and UP entries come from the DPCC approved list published by NDMC. Neither list is dated, so confirm each agency's current authorisation and EPR registration before you sell.</p>
+    <div class="scroll"><table>
+      <thead><tr><th>Agency</th><th>Type</th><th>Location</th><th class="num">Capacity (t/yr)</th><th>Phone</th><th>Email</th><th>Status</th></tr></thead>
+      <tbody id="ewBody"></tbody>
+    </table></div>
+  </section>
+
+  <!-- DIRECTORY -->
+  <section id="tab-dir" hidden>
+    <div class="row" style="justify-content:space-between;margin-bottom:12px">
+      <h2>Recycler directory</h2>
+      <div class="row">
+        <select id="dirCat" style="width:auto"><option value="all">All streams</option><option value="cardboard">Cardboard</option><option value="rigid">Hard plastic</option><option value="qsr">QSR mixed</option><option value="ewaste">E-waste</option></select>
+      </div>
+    </div>
+    <p class="note" style="max-width:80ch;margin-bottom:12px">Every contact below was taken from the company's own website or a government listing on the date shown. Verification column: <b class="v-ok">Verified</b> = phone and/or email on the official site or a pollution control board list; <b class="v-part">Partial</b> = address confirmed, contact incomplete; <b class="v-no">Contact pending</b> = no published contact found yet. Confirm CPCB EPR registration before any sale that needs EPR documentation.</p>
+    <div class="scroll"><table>
+      <thead><tr><th>Recycler</th><th>Streams</th><th>Location</th><th>Phone</th><th>Email</th><th>Capacity / intake</th><th>Verification</th></tr></thead>
+      <tbody id="dirBody"></tbody>
+    </table></div>
+    <details style="margin-top:18px" class="panel">
+      <summary>Add a recycler you have confirmed</summary>
+      <form id="addRec" class="stack" style="margin-top:14px" autocomplete="off">
+        <div class="two">
+          <div class="field"><label for="rName">Company name</label><input id="rName" required></div>
+          <div class="field"><label for="rCity">City, State</label><input id="rCity" required placeholder="Khanna, Punjab"></div>
+          <div class="field"><label for="rLat">Latitude</label><input id="rLat" type="number" step="0.0001" required></div>
+          <div class="field"><label for="rLng">Longitude</label><input id="rLng" type="number" step="0.0001" required></div>
+          <div class="field"><label for="rPhone">Phone(s), comma separated</label><input id="rPhone"></div>
+          <div class="field"><label for="rEmail">Email(s), comma separated</label><input id="rEmail"></div>
+        </div>
+        <div class="seg">
+          <label><input type="checkbox" id="rc-cardboard" value="cardboard"> Cardboard</label>
+          <label><input type="checkbox" id="rc-rigid" value="rigid"> Hard plastic</label>
+          <label><input type="checkbox" id="rc-qsr" value="qsr"> QSR mixed</label>
+          <label><input type="checkbox" id="rc-ewaste" value="ewaste"> E-waste</label>
+        </div>
+        <div class="field"><label for="rNote">Materials accepted, minimum lot, source of contact</label><input id="rNote"></div>
+        <div><button class="btn" type="submit">Add to directory</button></div>
+      </form>
+    </details>
+  </section>
+
+  <!-- RATES -->
+  <section id="tab-rates" hidden>
+    <h2 style="margin-bottom:6px">Indicative ex-yard rates</h2>
+    <p class="note" style="max-width:80ch;margin-bottom:14px">Ranges are compiled from published market listings and trade press, not from offers made to ECOIL. They exclude transport and GST and move with grade, moisture and contamination. Use them to sanity-check quotes; the RFQ quote is the price.</p>
+    <div class="scroll"><table>
+      <thead><tr><th>Stream / grade</th><th class="num">Low ₹/t</th><th class="num">High ₹/t</th><th>Basis</th><th>As of</th></tr></thead>
+      <tbody id="rateBody"></tbody>
+    </table></div>
+    <h3 style="margin:22px 0 8px">Sources</h3>
+    <ol class="src" id="srcList"></ol>
+  </section>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script src="/app.js" defer></script>
+</body>
+</html>

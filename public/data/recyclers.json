@@ -1,0 +1,1095 @@
+[
+  {
+    "address": "8-B Rudra Enclave, Industrial Area C, Ludhiana 141016",
+    "capacity": "Est. 2022, granule manufacturer",
+    "categories": [
+      "rigid"
+    ],
+    "checkedOn": "Checked 24 Oct 2026",
+    "city": "Ludhiana, Punjab",
+    "coordNote": "Approximate, industrial area level",
+    "emails": [
+      "sales@ashokasplastics.com"
+    ],
+    "kind": "facility",
+    "lat": 30.885,
+    "lng": 75.92,
+    "materials": "PP, HD, LD, PPCP, raffia granules from recycled plastic",
+    "name": "Ashokas Plastics",
+    "notes": "Confirm they buy unprocessed scrap and not only regrind.",
+    "phones": [
+      "+91 72780 00008"
+    ],
+    "sources": [
+      "https://www.ashokasplastics.com",
+      "https://www.enfplastic.com/ashokas-plastics"
+    ],
+    "state": "Punjab",
+    "verification": "Verified",
+    "website": "https://www.ashokasplastics.com",
+    "id": "ashokas-plastics"
+  },
+  {
+    "address": "Muzaffarnagar",
+    "capacity": "",
+    "categories": [
+      "cardboard"
+    ],
+    "checkedOn": "Checked 24 Oct 2026",
+    "city": "Muzaffarnagar, Uttar Pradesh",
+    "coordNote": "City level only",
+    "emails": [
+      "info@bindalpapers.com"
+    ],
+    "kind": "facility",
+    "lat": 29.47,
+    "lng": 77.7,
+    "materials": "Paper mill; confirm OCC grades accepted",
+    "name": "Bindal Papers Mills Ltd.",
+    "notes": "Email from DST NSTMIS R&D institutions list (2021). Verify before relying on it.",
+    "phones": [],
+    "sources": [
+      "https://www.indiascienceandtechnology.gov.in/node/184443"
+    ],
+    "state": "Uttar Pradesh",
+    "verification": "Partial",
+    "website": "",
+    "id": "bindal-papers"
+  },
+  {
+    "address": "C-22, Phase 2B, Focal Point, Rajpura 140401",
+    "capacity": "5,400 t recycled to date (company claim)",
+    "categories": [
+      "rigid"
+    ],
+    "checkedOn": "Checked 24 Oct 2026",
+    "city": "Rajpura, Punjab",
+    "coordNote": "Approximate, Focal Point level",
+    "emails": [
+      "info@esperanza.global"
+    ],
+    "kind": "facility",
+    "lat": 30.47,
+    "lng": 76.61,
+    "materials": "HDPE, LDPE, PP mechanical recycling to granules; offers bulk waste collection and EPR consultancy",
+    "name": "Esperanza Global Eco Solution Pvt. Ltd.",
+    "notes": "States PPCB registration and licence on its website.",
+    "phones": [
+      "+91 82838 84703",
+      "+91 80533 53583"
+    ],
+    "sources": [
+      "https://esperanza.global",
+      "https://www.enfplastic.com/esperanza-global"
+    ],
+    "state": "Punjab",
+    "verification": "Verified",
+    "website": "https://esperanza.global",
+    "id": "esperanza-rajpura"
+  },
+  {
+    "address": "Habibpur, Greater Noida",
+    "agencyType": "Recycler",
+    "capacityT": 19500,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Greater Noida, Uttar Pradesh",
+    "coordNote": "Approximate",
+    "emails": [],
+    "kind": "facility",
+    "lat": 28.52,
+    "listStatus": "DPCC approved list",
+    "lng": 77.53,
+    "materials": "E-waste recycling",
+    "name": "Auctus Recycling Solutions Pvt. Ltd.",
+    "phones": [
+      "1800 270 0038",
+      "80451 33906"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Uttar Pradesh",
+    "verification": "Verified",
+    "id": "ew-auctus"
+  },
+  {
+    "address": "Village Humayunpur, Nariangarh Road, Tehsil Dera Bassi",
+    "agencyType": "Recycler",
+    "capacityT": null,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Dera Bassi, SAS Nagar, Punjab",
+    "coordNote": "Approximate",
+    "emails": [
+      "neerajbansal375@gmail.com"
+    ],
+    "kind": "facility",
+    "lat": 30.58,
+    "listStatus": "PPCB list · EPR applied",
+    "lng": 76.86,
+    "materials": "E-waste recycling",
+    "name": "Black Diamond Cements Pvt. Ltd.",
+    "notes": "Closest listed recycler to Mohali and Zirakpur.",
+    "phones": [],
+    "sources": [
+      "https://ppcb.punjab.gov.in/sites/default/files/documents/List%20of%20Recyclers_%20Refurbishers%20for%20Management%20of%20E-Waste%20in%20the%20State%20of%20Punjab.pdf"
+    ],
+    "state": "Punjab",
+    "verification": "Verified",
+    "id": "ew-black-diamond"
+  },
+  {
+    "address": "VPO Hambran, Ludhiana",
+    "agencyType": "Recycler",
+    "capacityT": null,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Ludhiana, Punjab",
+    "coordNote": "Approximate",
+    "emails": [
+      "admin@cosmosrecycling.com"
+    ],
+    "kind": "facility",
+    "lat": 30.99,
+    "listStatus": "PPCB list · EPR registered",
+    "lng": 75.68,
+    "materials": "E-waste recycling",
+    "name": "Cosmos Recycling Pvt. Ltd.",
+    "phones": [],
+    "sources": [
+      "https://ppcb.punjab.gov.in/sites/default/files/documents/List%20of%20Recyclers_%20Refurbishers%20for%20Management%20of%20E-Waste%20in%20the%20State%20of%20Punjab.pdf"
+    ],
+    "state": "Punjab",
+    "verification": "Verified",
+    "id": "ew-cosmos"
+  },
+  {
+    "address": "Plot 292, Sector 7, IMT Manesar",
+    "agencyType": "Recycler",
+    "capacityT": 10000,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "IMT Manesar, Gurugram, Haryana",
+    "coordNote": "Approximate",
+    "emails": [
+      "info@dwmpl.com"
+    ],
+    "kind": "facility",
+    "lat": 28.36,
+    "listStatus": "DPCC approved list",
+    "lng": 76.94,
+    "materials": "E-waste recycling",
+    "name": "Deshwal Waste Management Pvt. Ltd.",
+    "phones": [
+      "1800 102 9077",
+      "99100 55036"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Haryana",
+    "verification": "Verified",
+    "id": "ew-deshwal"
+  },
+  {
+    "address": "Plot 100, Sector 5, IMT Manesar",
+    "agencyType": "Recycler",
+    "capacityT": 2160,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "IMT Manesar, Gurugram, Haryana",
+    "coordNote": "Approximate",
+    "emails": [
+      "ewastedelhi@earthsense.in"
+    ],
+    "kind": "facility",
+    "lat": 28.36,
+    "listStatus": "DPCC approved list",
+    "lng": 76.93,
+    "materials": "E-waste recycling",
+    "name": "Earth Sense Recycle Pvt. Ltd.",
+    "phones": [
+      "1800 419 0161"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Haryana",
+    "verification": "Verified",
+    "id": "ew-earth-sense"
+  },
+  {
+    "address": "Village Ismaila, Sampla-Beri Road, Tehsil Sampla",
+    "agencyType": "Recycler",
+    "capacityT": 600,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Sampla, Rohtak, Haryana",
+    "coordNote": "Approximate",
+    "emails": [
+      "info@ewastes.in"
+    ],
+    "kind": "facility",
+    "lat": 28.8,
+    "listStatus": "DPCC approved list",
+    "lng": 76.75,
+    "materials": "E-waste recycling",
+    "name": "Earth Waste Management (P) Ltd.",
+    "phones": [
+      "93127 02965"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Haryana",
+    "verification": "Verified",
+    "id": "ew-earth-waste"
+  },
+  {
+    "address": "G.T. Road, Samalkha, Panipat",
+    "agencyType": "Recycler",
+    "capacityT": 6000,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Samalkha, Panipat, Haryana",
+    "coordNote": "Approximate",
+    "emails": [
+      "sourcing@exigorecycling.com"
+    ],
+    "kind": "facility",
+    "lat": 29.23,
+    "listStatus": "DPCC approved list",
+    "lng": 77.01,
+    "materials": "E-waste recycling",
+    "name": "Exigo Recycling Pvt. Ltd.",
+    "notes": "Has a dedicated sourcing inbox.",
+    "phones": [
+      "1800 102 5018",
+      "95992 18908",
+      "98960 00658"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Haryana",
+    "verification": "Verified",
+    "id": "ew-exigo"
+  },
+  {
+    "address": "Village Ramnagar, Tehsil Ganaur",
+    "agencyType": "Recycler",
+    "capacityT": 2600,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Ganaur, Sonipat, Haryana",
+    "coordNote": "Approximate",
+    "emails": [
+      "support@globalwastesolution.in"
+    ],
+    "kind": "facility",
+    "lat": 29.13,
+    "listStatus": "DPCC approved list",
+    "lng": 77.02,
+    "materials": "E-waste recycling",
+    "name": "Global Waste Solutions",
+    "phones": [
+      "1800 270 7666",
+      "96679 92117"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Haryana",
+    "verification": "Verified",
+    "id": "ew-global-waste"
+  },
+  {
+    "address": "223 Hadbast, Village Mangarh, Kohara-Machhiwara Road, Ludhiana",
+    "agencyType": "Refurbisher",
+    "capacityT": null,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Ludhiana, Punjab",
+    "coordNote": "Approximate",
+    "emails": [
+      "info@greenbirdrecycling.in"
+    ],
+    "kind": "facility",
+    "lat": 30.9,
+    "listStatus": "PPCB list · EPR applied",
+    "lng": 76.08,
+    "materials": "Refurbishment of e-waste",
+    "name": "Green Bird Recycling",
+    "notes": "Refurbisher only; suits working IT equipment, not scrap.",
+    "phones": [],
+    "sources": [
+      "https://ppcb.punjab.gov.in/sites/default/files/documents/List%20of%20Recyclers_%20Refurbishers%20for%20Management%20of%20E-Waste%20in%20the%20State%20of%20Punjab.pdf"
+    ],
+    "state": "Punjab",
+    "verification": "Verified",
+    "id": "ew-green-bird"
+  },
+  {
+    "address": "Khasra 645, Achraunda, Bahadurpur Road, Partapur",
+    "agencyType": "Recycler",
+    "capacityT": 1800,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Partapur, Meerut, Uttar Pradesh",
+    "coordNote": "Approximate",
+    "emails": [
+      "info@greentechrecycling.in",
+      "gtr@greentechrecycling.in"
+    ],
+    "kind": "facility",
+    "lat": 28.93,
+    "listStatus": "DPCC approved list",
+    "lng": 77.71,
+    "materials": "E-waste recycling",
+    "name": "Green Tech Recycling",
+    "phones": [
+      "1800 3070 2090"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Uttar Pradesh",
+    "verification": "Verified",
+    "id": "ew-green-tech"
+  },
+  {
+    "address": "Plot G-284, M.G. Road Industrial Area, Hapur",
+    "agencyType": "Recycler",
+    "capacityT": 12000,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Hapur, Uttar Pradesh",
+    "coordNote": "Approximate",
+    "emails": [
+      "info@greenivarecycler.com"
+    ],
+    "kind": "facility",
+    "lat": 28.73,
+    "listStatus": "DPCC approved list",
+    "lng": 77.78,
+    "materials": "E-waste recycling",
+    "name": "Greeniva Recycler Pvt. Ltd.",
+    "phones": [
+      "1800 102 4919",
+      "99100 00146"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Uttar Pradesh",
+    "verification": "Verified",
+    "id": "ew-greeniva"
+  },
+  {
+    "address": "348, Patparganj Industrial Area",
+    "agencyType": "Dismantler",
+    "capacityT": null,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Patparganj, Delhi",
+    "coordNote": "Approximate",
+    "emails": [],
+    "kind": "facility",
+    "lat": 28.63,
+    "listStatus": "DPCC approved list",
+    "lng": 77.31,
+    "materials": "E-waste dismantling, 1.5 t/day",
+    "name": "Greenscape Eco Management Pvt. Ltd.",
+    "phones": [
+      "88268 11776"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Delhi",
+    "verification": "Verified",
+    "id": "ew-greenscape"
+  },
+  {
+    "address": "Plot 67-68, Jarrout Road, Village Mandour Industrial Area",
+    "agencyType": "Recycler",
+    "capacityT": 365,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Ambala City, Haryana",
+    "coordNote": "Approximate",
+    "emails": [],
+    "kind": "facility",
+    "lat": 30.39,
+    "listStatus": "DPCC approved list",
+    "lng": 76.8,
+    "materials": "E-waste recycling",
+    "name": "Honey Disposal Store",
+    "phones": [
+      "94661 89622",
+      "94162 79622"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Haryana",
+    "verification": "Verified",
+    "id": "ew-honey-disposal"
+  },
+  {
+    "address": "Khasra 35, Kumarhera, 7th km Dehradun Road",
+    "agencyType": "Recycler",
+    "capacityT": 12000,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Saharanpur, Uttar Pradesh",
+    "coordNote": "Approximate",
+    "emails": [
+      "info@horizonworld.in"
+    ],
+    "kind": "facility",
+    "lat": 30.02,
+    "listStatus": "DPCC approved list",
+    "lng": 77.58,
+    "materials": "E-waste recycling",
+    "name": "Horizon Recycling Pvt. Ltd.",
+    "phones": [
+      "1800 270 7006",
+      "81710 00900"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Uttar Pradesh",
+    "verification": "Verified",
+    "id": "ew-horizon"
+  },
+  {
+    "address": "C-38, Sanjay Gandhi Nagar Industrial Area, Jalandhar",
+    "agencyType": "Recycler",
+    "capacityT": null,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Jalandhar, Punjab",
+    "coordNote": "Approximate",
+    "emails": [
+      "info@kjrecyclers.com"
+    ],
+    "kind": "facility",
+    "lat": 31.34,
+    "listStatus": "PPCB list · EPR registered",
+    "lng": 75.6,
+    "materials": "E-waste recycling",
+    "name": "K.J. Recycler",
+    "phones": [],
+    "sources": [
+      "https://ppcb.punjab.gov.in/sites/default/files/documents/List%20of%20Recyclers_%20Refurbishers%20for%20Management%20of%20E-Waste%20in%20the%20State%20of%20Punjab.pdf"
+    ],
+    "state": "Punjab",
+    "verification": "Verified",
+    "id": "ew-kj-recycler"
+  },
+  {
+    "address": "Modinagar, Ghaziabad",
+    "agencyType": "Recycler",
+    "capacityT": 30000,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Modinagar, Ghaziabad, Uttar Pradesh",
+    "coordNote": "Approximate",
+    "emails": [
+      "gaurav@mahalaxmirecycler.in"
+    ],
+    "kind": "facility",
+    "lat": 28.83,
+    "listStatus": "DPCC approved list",
+    "lng": 77.58,
+    "materials": "E-waste recycling",
+    "name": "Mahalaxmi Metal Alloys (India) Pvt. Ltd.",
+    "notes": "Largest listed capacity in NCR.",
+    "phones": [
+      "1800 2585 593",
+      "94122 23462"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Uttar Pradesh",
+    "verification": "Verified",
+    "id": "ew-mahalaxmi"
+  },
+  {
+    "address": "14/1, Mathura Road, Faridabad",
+    "agencyType": "Recycler",
+    "capacityT": 5796,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Faridabad, Haryana",
+    "coordNote": "Approximate",
+    "emails": [
+      "info@namoewaste.com"
+    ],
+    "kind": "facility",
+    "lat": 28.42,
+    "listStatus": "DPCC approved list",
+    "lng": 77.31,
+    "materials": "E-waste recycling",
+    "name": "Namo E-Waste Management Ltd.",
+    "phones": [
+      "1800 123 5124"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Haryana",
+    "verification": "Verified",
+    "id": "ew-namo"
+  },
+  {
+    "address": "Plot D-6, Udyog Vihar Phase VI, Sector 37",
+    "agencyType": "Recycler",
+    "capacityT": 6030,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Gurugram, Haryana",
+    "coordNote": "Approximate",
+    "emails": [
+      "info@nirvanarecycling.com"
+    ],
+    "kind": "facility",
+    "lat": 28.44,
+    "listStatus": "DPCC approved list",
+    "lng": 76.99,
+    "materials": "E-waste recycling",
+    "name": "Nirvana Recycling Pvt. Ltd.",
+    "phones": [
+      "99676 67739"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Haryana",
+    "verification": "Verified",
+    "id": "ew-nirvana"
+  },
+  {
+    "address": "Plot 127, Jashan City, Kohara-Sahnewal Link Road, Jandiali",
+    "agencyType": "Recycler",
+    "capacityT": null,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Ludhiana, Punjab",
+    "coordNote": "Approximate",
+    "emails": [
+      "info@recyclingvilla.com"
+    ],
+    "kind": "facility",
+    "lat": 30.86,
+    "listStatus": "PPCB list · EPR applied",
+    "lng": 76.02,
+    "materials": "E-waste recycling",
+    "name": "Recycling Villa",
+    "phones": [],
+    "sources": [
+      "https://ppcb.punjab.gov.in/sites/default/files/documents/List%20of%20Recyclers_%20Refurbishers%20for%20Management%20of%20E-Waste%20in%20the%20State%20of%20Punjab.pdf"
+    ],
+    "state": "Punjab",
+    "verification": "Verified",
+    "id": "ew-recycling-villa"
+  },
+  {
+    "address": "Khasra 115, Village Achraunda, Meerut",
+    "agencyType": "Recycler",
+    "capacityT": 8000,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Meerut, Uttar Pradesh",
+    "coordNote": "Approximate",
+    "emails": [
+      "info@rrrecyclers.com"
+    ],
+    "kind": "facility",
+    "lat": 28.94,
+    "listStatus": "DPCC approved list",
+    "lng": 77.66,
+    "materials": "E-waste recycling",
+    "name": "R.R. Recycler Pvt. Ltd.",
+    "phones": [
+      "1800 2002 450",
+      "98888 67115"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Uttar Pradesh",
+    "verification": "Verified",
+    "id": "ew-rr-recycler"
+  },
+  {
+    "address": "D-45, Industrial Area, Raikot",
+    "agencyType": "Recycler and refurbisher",
+    "capacityT": null,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Raikot, Ludhiana, Punjab",
+    "coordNote": "Approximate",
+    "emails": [
+      "sprecorecycling@rediffmail.com"
+    ],
+    "kind": "facility",
+    "lat": 30.65,
+    "listStatus": "PPCB list · EPR applied",
+    "lng": 75.6,
+    "materials": "E-waste recycling and refurbishment",
+    "name": "Spreco Recycling",
+    "phones": [],
+    "sources": [
+      "https://ppcb.punjab.gov.in/sites/default/files/documents/List%20of%20Recyclers_%20Refurbishers%20for%20Management%20of%20E-Waste%20in%20the%20State%20of%20Punjab.pdf"
+    ],
+    "state": "Punjab",
+    "verification": "Verified",
+    "id": "ew-spreco"
+  },
+  {
+    "address": "Village Wazidpur Saboli, District Sonipat",
+    "agencyType": "Recycler",
+    "capacityT": 12000,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Sonipat, Haryana",
+    "coordNote": "Approximate",
+    "emails": [
+      "recycle@tes-amm.net"
+    ],
+    "kind": "facility",
+    "lat": 28.88,
+    "listStatus": "DPCC approved list",
+    "lng": 77.1,
+    "materials": "E-waste recycling",
+    "name": "TES-AMM (India) Pvt. Ltd.",
+    "phones": [
+      "1800 102 4144"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Haryana",
+    "verification": "Verified",
+    "id": "ew-tes-amm"
+  },
+  {
+    "address": "902A/5/6, Chara Mandi Road, Ambala City",
+    "agencyType": "Recycler",
+    "capacityT": 1825,
+    "categories": [
+      "ewaste"
+    ],
+    "checkedOn": "List accessed 24 Oct 2026",
+    "city": "Ambala City, Haryana",
+    "coordNote": "Approximate",
+    "emails": [
+      "thapardisposal@gmail.com"
+    ],
+    "kind": "facility",
+    "lat": 30.37,
+    "listStatus": "DPCC approved list",
+    "lng": 76.78,
+    "materials": "E-waste recycling",
+    "name": "Thapar Disposal Industries",
+    "phones": [
+      "89303 07243",
+      "98137 80008"
+    ],
+    "sources": [
+      "https://ndmc.gov.in/pdf/dpcc_approved_list_of_e-waste_dismantlers_recyclers_refurbishers_collection_center_of_recycler.pdf"
+    ],
+    "state": "Haryana",
+    "verification": "Verified",
+    "id": "ew-thapar-disposal"
+  },
+  {
+    "address": "97B, Industrial Estate, Overlock Road, near Partap Chowk, Ludhiana 141003",
+    "capacity": "14+ years in recycled granules",
+    "categories": [
+      "rigid"
+    ],
+    "checkedOn": "Checked 24 Oct 2026",
+    "city": "Ludhiana, Punjab",
+    "coordNote": "Map pin from company website",
+    "emails": [
+      "crm@finerezyklates.com"
+    ],
+    "kind": "facility",
+    "lat": 30.8907,
+    "lng": 75.8628,
+    "materials": "HDPE, PP, LDPE, LLDPE, PPCP into recycled granules",
+    "name": "Fine Rezyklates LLP",
+    "notes": "No phone published; site uses a web form. Confirm post-consumer container intake.",
+    "phones": [],
+    "sources": [
+      "https://www.finerezyklates.com",
+      "https://www.enfplastic.com/fine-rezyklates"
+    ],
+    "state": "Punjab",
+    "verification": "Partial",
+    "website": "https://www.finerezyklates.com",
+    "id": "fine-rezyklates"
+  },
+  {
+    "address": "Same contacts as Kanpur head office",
+    "capacity": "Part of group capacity",
+    "categories": [
+      "rigid"
+    ],
+    "checkedOn": "Checked 24 Oct 2026",
+    "city": "Bilaspur, Rampur, Uttar Pradesh",
+    "coordNote": "Approximate, town level",
+    "emails": [
+      "support@ganeshaecosphere.com"
+    ],
+    "kind": "facility",
+    "lat": 28.89,
+    "lng": 79.27,
+    "materials": "Post-consumer PET bottles",
+    "name": "Ganesha Ecosphere Ltd. (Bilaspur, Rampur unit)",
+    "notes": "Plant location named in company exchange filings.",
+    "phones": [
+      "1800 654 2444"
+    ],
+    "sources": [
+      "https://www.ganeshaecosphere.com",
+      "https://bseindia.com/xml-data/corpfiling/AttachHis/47c3db39-c27f-46fe-9576-a16b65eb79d1.pdf"
+    ],
+    "state": "Uttar Pradesh",
+    "verification": "Verified",
+    "website": "https://www.ganeshaecosphere.com",
+    "id": "ganesha-bilaspur"
+  },
+  {
+    "address": "Regd. office: 113/216-B Swaroop Nagar, Kanpur 208002",
+    "capacity": "196,440 TPA installed (group)",
+    "categories": [
+      "rigid"
+    ],
+    "checkedOn": "Checked 24 Oct 2026",
+    "city": "Kanpur Dehat, Uttar Pradesh",
+    "coordNote": "Approximate, plant area",
+    "emails": [
+      "support@ganeshaecosphere.com"
+    ],
+    "kind": "facility",
+    "lat": 26.39,
+    "lng": 80.12,
+    "materials": "Post-consumer PET bottles into rPET chips, fibre, yarn; HDPE/PP line approved 2021",
+    "name": "Ganesha Ecosphere Ltd. (Kanpur Dehat unit)",
+    "notes": "Buys through a pan-India network of 300+ collection partners; ask for the procurement desk.",
+    "phones": [
+      "1800 654 2444",
+      "+91 512 2555505"
+    ],
+    "sources": [
+      "https://www.ganeshaecosphere.com"
+    ],
+    "state": "Uttar Pradesh",
+    "verification": "Verified",
+    "website": "https://www.ganeshaecosphere.com",
+    "id": "ganesha-kanpur"
+  },
+  {
+    "address": "14 co-processing and 6 pre-processing sites (company figures)",
+    "capacity": "",
+    "categories": [
+      "qsr"
+    ],
+    "checkedOn": "Checked 24 Oct 2026",
+    "city": "Cement kiln co-processing",
+    "emails": [],
+    "kind": "network",
+    "lat": null,
+    "lng": null,
+    "materials": "Non-recyclable combustible fraction and RDF for co-processing",
+    "name": "Geoclean (ACC / Ambuja, Adani Cement)",
+    "notes": "Formerly Geocycle India, renamed Geoclean in Dec 2022. Older geocycleindia@holcim.com address predates the rename; obtain a current contact via ACC or Ambuja plant AFR teams.",
+    "phones": [],
+    "sources": [
+      "https://www.worldcement.com/indian-subcontinent/13122022/adani-cement-unveils-waste-management-arm-geoclean/"
+    ],
+    "state": "",
+    "verification": "Contact pending",
+    "website": "",
+    "id": "geoclean"
+  },
+  {
+    "address": "Fatehgarh Churian Road, Amritsar",
+    "capacity": "About 35,000 t waste paper per month (2023 interview)",
+    "categories": [
+      "cardboard"
+    ],
+    "checkedOn": "Checked 24 Oct 2026",
+    "city": "Amritsar, Punjab",
+    "coordNote": "Approximate, road level",
+    "emails": [],
+    "kind": "facility",
+    "lat": 31.66,
+    "lng": 74.93,
+    "materials": "Recycled fibre mill; mixed paper, SOP, OCC; kraft line since 2020",
+    "name": "Khanna Paper Mills Ltd.",
+    "notes": "Largest single-site recycled-fibre user in India. No contact published on the official site; reach the purchase office through the mill gate or LinkedIn.",
+    "phones": [],
+    "sources": [
+      "https://www.khannapaper.com/?p=201",
+      "https://papermart.in/khanna-paper-mills-limited-soaring-on-waste-paper-wings-for-sustainable-paper-business/"
+    ],
+    "state": "Punjab",
+    "verification": "Contact pending",
+    "website": "https://www.khannapaper.com",
+    "id": "khanna-paper"
+  },
+  {
+    "address": "I-22, Sector 5, Bawana, New Delhi 110039",
+    "capacity": "Granule producer and exporter",
+    "categories": [
+      "rigid"
+    ],
+    "checkedOn": "Checked 24 Oct 2026",
+    "city": "Bawana, New Delhi",
+    "coordNote": "Approximate, industrial area level",
+    "emails": [
+      "nikhil@nidhienterprises.net"
+    ],
+    "kind": "facility",
+    "lat": 28.8,
+    "lng": 77.04,
+    "materials": "HDPE, LDPE, LLDPE, PP, PPCP recycled granules",
+    "name": "Nidhi Enterprises",
+    "notes": "Listed as a recycling plant on ENF; confirm they purchase scrap directly.",
+    "phones": [
+      "+91 99992 14040"
+    ],
+    "sources": [
+      "https://nidhienterprises.net",
+      "https://www.enfplastic.com/nidhi-enterprises"
+    ],
+    "state": "Delhi",
+    "verification": "Verified",
+    "website": "https://nidhienterprises.net",
+    "id": "nidhi-enterprises"
+  },
+  {
+    "address": "Kaithal Road, Nissing, Karnal",
+    "capacity": "250 TPD rPET flakes + 250 TPD rPSF",
+    "categories": [
+      "rigid"
+    ],
+    "checkedOn": "Checked 24 Oct 2026",
+    "city": "Nissing, Karnal, Haryana",
+    "coordNote": "Approximate, town level",
+    "emails": [
+      "info@northerenecosphere.com"
+    ],
+    "kind": "facility",
+    "lat": 29.79,
+    "lng": 76.79,
+    "materials": "Post-consumer PET bottles into rPET flakes and recycled PSF",
+    "name": "Northern Ecosphere India Pvt. Ltd.",
+    "notes": "Email is reproduced exactly as printed on the website (spelling 'northerene'); if it bounces, try info@northernecosphere.com or phone.",
+    "phones": [
+      "+91 98960 40761"
+    ],
+    "sources": [
+      "https://northernecosphere.com",
+      "https://www.enfplastic.com/northern-ecosphere"
+    ],
+    "state": "Haryana",
+    "verification": "Verified",
+    "website": "https://northernecosphere.com",
+    "id": "northern-ecosphere"
+  },
+  {
+    "address": "Online B2B marketplace, 28+ states",
+    "capacity": "10,000+ verified businesses (company claim)",
+    "categories": [
+      "rigid"
+    ],
+    "checkedOn": "Checked 24 Oct 2026",
+    "city": "Pan-India marketplace",
+    "emails": [],
+    "kind": "network",
+    "lat": null,
+    "lng": null,
+    "materials": "Plastic and metal scrap; GST-verified buyers and sellers",
+    "name": "Recykal.Market",
+    "notes": "Useful to price-discover a PET or HDPE lot against many buyers at once.",
+    "phones": [
+      "+91 77999 96255"
+    ],
+    "sources": [
+      "https://recykal.market"
+    ],
+    "state": "",
+    "verification": "Verified",
+    "website": "https://recykal.market",
+    "id": "recykal-market"
+  },
+  {
+    "address": "Trilokpur Road, Kala Amb, Sirmaur 173030",
+    "capacity": "About 400 TPD paper, kraft and W&P",
+    "categories": [
+      "cardboard"
+    ],
+    "checkedOn": "Checked 24 Oct 2026",
+    "city": "Kala Amb, Himachal Pradesh",
+    "coordNote": "Approximate, town level",
+    "emails": [
+      "info@ruchirapapers.com",
+      "rplynr@ruchirapapers.com"
+    ],
+    "kind": "facility",
+    "lat": 30.52,
+    "lng": 77.2,
+    "materials": "Kraft paper from waste paper plus bagasse, wheat straw, sarkanda",
+    "name": "Ruchira Papers Ltd.",
+    "notes": "Second phone and email are the Yamuna Nagar admin office. Listed company (NSE: RUCHIRA).",
+    "phones": [
+      "+91 80538 00897",
+      "+91 1732 233799"
+    ],
+    "sources": [
+      "https://www.ruchirapapers.com"
+    ],
+    "state": "Himachal Pradesh",
+    "verification": "Verified",
+    "website": "https://www.ruchirapapers.com",
+    "id": "ruchira-papers"
+  },
+  {
+    "address": "HQ Bengaluru; serves bulk waste generators in 50+ sites",
+    "capacity": "100+ t/day managed",
+    "categories": [
+      "qsr",
+      "cardboard",
+      "rigid",
+      "ewaste"
+    ],
+    "checkedOn": "Checked 24 Oct 2026",
+    "city": "Pan-India service",
+    "emails": [
+      "info@saahaszerowaste.com"
+    ],
+    "kind": "network",
+    "lat": null,
+    "lng": null,
+    "materials": "Food waste to compost or biogas; dry waste sorted into 40+ fractions at MRF; e-waste channelled to authorised recyclers; low-grade fraction to cement kilns",
+    "name": "Saahas Zero Waste",
+    "notes": "Service provider, so expect a service fee for QSR mixed waste rather than a purchase price. Ask about North India coverage.",
+    "phones": [
+      "1800 258 6676"
+    ],
+    "sources": [
+      "https://www.saahaszerowaste.com"
+    ],
+    "state": "",
+    "verification": "Verified",
+    "website": "https://www.saahaszerowaste.com",
+    "id": "saahas"
+  },
+  {
+    "address": "10th KM Stone, Delhi Road, O.P. Jindal Marg, Hisar 125044",
+    "capacity": "8,400 TPA PET flakes (ENF)",
+    "categories": [
+      "rigid"
+    ],
+    "checkedOn": "Checked 24 Oct 2026",
+    "city": "Hisar, Haryana",
+    "coordNote": "Approximate, Delhi Road",
+    "emails": [],
+    "kind": "facility",
+    "lat": 29.12,
+    "lng": 75.8,
+    "materials": "PET bottles into hot-washed PET flakes",
+    "name": "Shiv Ram Jindal Industries Pvt. Ltd.",
+    "notes": "Phone is the S.R. Jindal group office at the same address (listed under Ravindra Tubes). Ask for the PET flakes unit.",
+    "phones": [
+      "+91 1662 220568"
+    ],
+    "sources": [
+      "https://srjindalgroup.com/contact-us/",
+      "https://www.enfplastic.com/shiv-ram-jindal-industries"
+    ],
+    "state": "Haryana",
+    "verification": "Partial",
+    "website": "https://srjindalgroup.com",
+    "id": "shiv-ram-jindal"
+  },
+  {
+    "address": "9th KM Stone, Bhopa Road, Muzaffarnagar 251001",
+    "capacity": "About 200,000 TPA paper (2024 interview)",
+    "categories": [
+      "cardboard"
+    ],
+    "checkedOn": "Checked 24 Oct 2026",
+    "city": "Muzaffarnagar, Uttar Pradesh",
+    "coordNote": "Approximate, road level",
+    "emails": [],
+    "kind": "facility",
+    "lat": 29.47,
+    "lng": 77.75,
+    "materials": "Multilayer kraft 22 to 40 BF, mainly recycled furnish",
+    "name": "Silverton Pulp & Papers Pvt. Ltd.",
+    "notes": "Address from trade records and press. No official contact found; Muzaffarnagar is the main North India kraft cluster.",
+    "phones": [],
+    "sources": [
+      "https://papermart.in/silverton-pulp-and-papers-to-commence-new/",
+      "https://cn.panjiva.com/Silverton-Pulp-Papers-Pvt-Ltd/15432816"
+    ],
+    "state": "Uttar Pradesh",
+    "verification": "Partial",
+    "website": "",
+    "id": "silverton"
+  }
+]
